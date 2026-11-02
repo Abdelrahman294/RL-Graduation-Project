@@ -1,6 +1,6 @@
 # Temporal GNSS Spoofing DQN
 
-This is a separate temporal extension of the paper reproduction in `../gnss_dqn_reproduction`. It keeps the original implementation untouched and reads the same `../data_new` files.
+This is a separate temporal extension of the paper reproduction in `../gnss_dqn_reproduction`. It keeps the original implementation untouched. The seven CSV recordings required by this project are included in the repository under `data/`, so a clone or Codespace has the data in the expected location.
 
 ## Data and temporal design
 
@@ -35,3 +35,4 @@ The run saves best-validation and final checkpoints plus the scaler and split ma
 - `src/gnss_temporal/metrics.py`: chronological history windows and prediction-switch metric.
 - `src/gnss_temporal/training.py`: DQN setup and periodic validation.
 - `src/gnss_temporal/evaluation.py`: final chronological test evaluation and reports.
+

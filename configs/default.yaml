@@ -1,4 +1,4 @@
-data_dir: ../data_new
+data_dir: data
 output_dir: artifacts
 seed: 42
 drop_initial_rows: 100
