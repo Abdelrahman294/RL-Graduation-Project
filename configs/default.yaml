@@ -1,0 +1,39 @@
+data_dir: ../data_new
+output_dir: artifacts
+seed: 42
+drop_initial_rows: 100
+common_prns: [3, 6, 7, 13, 16, 19, 23]
+
+recordings:
+  cs: cs.csv
+  ds1: ds1.csv
+  ds2: ds2.csv
+  ds3: ds3.csv
+  ds4: ds4.csv
+  ds7: ds7.csv
+  ds8: ds8.csv
+
+split:
+  train: 0.70
+  validation: 0.15
+  test: 0.15
+  embargo_epochs: null
+
+temporal:
+  history_length: 10
+  episode_steps: 128
+
+training:
+  total_timesteps: 100000
+  eval_freq: 10000
+  learning_rate: 0.001
+  gamma: 0.99
+  buffer_size: 10000
+  learning_starts: 1000
+  batch_size: 64
+  train_freq: 1
+  target_update_interval: 500
+  exploration_fraction: 0.50
+  exploration_initial_eps: 1.0
+  exploration_final_eps: 0.05
+  net_arch: [128, 64]

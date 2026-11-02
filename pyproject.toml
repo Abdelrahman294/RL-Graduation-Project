@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gnss-temporal-dqn"
+version = "0.1.0"
+description = "Chronological, history-stacked DQN extension for TEXBAT GNSS spoofing data"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+  "numpy>=1.26,<3", "pandas>=2.1,<4", "scikit-learn>=1.3,<2",
+  "matplotlib>=3.8,<4", "PyYAML>=6.0,<7", "joblib>=1.3,<2",
+  "gymnasium>=0.29,<2", "stable-baselines3>=2.3,<3", "torch>=2.2"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
